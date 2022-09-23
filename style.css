@@ -3,12 +3,15 @@
   --color-primary: #34547a;
   --color-secondary: #727272;
   --color-white: #ffffff;
+  --bg-color-grey: #eeeff1;
   --font-size: 16px;
   --font-primary: 'Roboto', sans-serif;
   --container-main: 1150px;
   --gap: 20px;
+  --gap-sm: calc(var(--gap) / 2);
   --letter-spacing: 0.1em;
   --line-height-lg: 1.625;
+
 
 }
 
@@ -34,28 +37,34 @@ a {
 
 .container {
   max-width: var(--container-main);
-  padding: var(--gap);
+  padding: 0 var(--gap);
   margin: 0 auto;
- 
+
 
 }
 
-.header {}
+.header {
+  padding: 70px 0 141px;
+  background-color: var(--bg-color-grey);
+}
 
-.header-navbar {}
+.header-navbar {
+  margin-bottom: 138px;
+}
 
 .header-navbar__list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 42px;
+  column-gap: 23px;
+  margin-left: calc(0px - var(--gap-sm));
 }
-
-.header-navbar__item {}
 
 .header-navbar__link {
   letter-spacing: var(--letter-spacing);
   color: var(--color-black);
+  padding: var(--gap-sm);
+  display: block;
 }
 
 .header-navbar__link--active {
@@ -63,18 +72,24 @@ a {
   color: var(--color-primary);
 }
 
-.header-content {}
+.header-content {
+  max-width: 540px;
+
+}
 
 .header-content__title {
-
   font-weight: 500;
   font-size: 48px;
-  line-height: var(--line-height-lg) color: #000000;
+  line-height: var(--line-height-lg);
+  margin-bottom: 0 0 35px;
+  color: #000000;
 
 }
 
 .header-content__description {
   color: var(--color-secondary);
+  margin-bottom: 56px;
+  line-height: var(--line-height-lg);
 
 }
 
@@ -84,10 +99,27 @@ a {
   width: 225px;
   height: 65px;
   justify-content: center;
-
   line-height: var(--line-height-lg);
   letter-spacing: var(--letter-spacing);
   color: var(--color-white);
   padding: 0.5em 1em;
   background-color: var(--color-primary);
+}
+
+
+.experience {
+  background-color: #34547a;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
