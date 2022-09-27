@@ -7,10 +7,12 @@
   --font-size: 16px;
   --font-primary: 'Roboto', sans-serif;
   --container-main: 1150px;
+  --container-small: 540px;
   --gap: 20px;
   --gap-sm: calc(var(--gap) / 2);
   --letter-spacing: 0.1em;
   --line-height-lg: 1.625;
+  --line-height-sm: 1.2;
 
 
 }
@@ -39,8 +41,19 @@ a {
   max-width: var(--container-main);
   padding: 0 var(--gap);
   margin: 0 auto;
+}
 
-
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .header {
@@ -73,7 +86,7 @@ a {
 }
 
 .header-content {
-  max-width: 540px;
+  max-width: var(--container-small);
 
 }
 
@@ -107,19 +120,97 @@ a {
 }
 
 
+
+.main {
+}
+
+.section {
+}
+
+.section__title {
+font-weight: 500;
+font-size: 32px;
+line-height: var(--line-height-sm);
+text-align: center;
+}
+
+.section__description {
+line-height: var(--line-height-lg);
+text-align: center;
+color: var(--color-secondary);
+
+}
+
+.about {
+}
+
+.about__title {
+}
+
+.about__discription {
+}
+
+
 .experience {
   background-color: #34547a;
 }
 
+.experience-item {
+}
+
+.experience-item__description {
+}
+
+
+
+
+
+
+
+
+
+
+
+.container {
+}
 .visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+}
+
+
+.experience-item__title {
+}
+.experience-item__text {
+}
+.experience-item__image {
+}
+.process {
+}
+
+.process__content {
+}
+.process__title {
+}
+.section__title {
+}
+.process__description {
+}
+
+.process__video {
+}
+.footer {
+}
+.footer__name {
+}
+.footer__copyright {
+}
+
+
+
+.section {
+}
+.container {
+}
+
+
+.section__description {
 }
